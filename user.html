@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>User</title>
-
 </head>
-
 <body>
-
-  <a class="js" href="#">hello from user</a>
-  <iframe src="file:///C:/Users/andrey/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/landing.html" frameborder="0"></iframe>
-
-  <script defer>
-      window.addEventListener("message", receiveMessage, false);
-
-      function receiveMessage(e) {
-        console.log(document.querySelector('.js').innerHTML);
-        console.log(e.data);
-        
-      }
-  </script>
+    <a class="js" href="#">hello from user</a>
+  
+    <script>
+      window.addEventListener('load', () => {
+        window.addEventListener("message", receiveMessage, false);
+  
+        function receiveMessage(e) {
+          console.log(document.querySelector('.js').innerHTML);
+          console.log(e.data);
+          console.log(new Date().getMilliseconds);
+          // console.log(window.localStorage.setItem('date', new Data()));
+        }
+      });
+    </script>
 </body>
-
 </html>
