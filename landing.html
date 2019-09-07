@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>User</title>
+
+</head>
+
+<body>
+
+  <a class="js-scroll-block" href="#">hello</a>
+
+  <script>
+    window.addEventListener('load', () => {
+      window.addEventListener("message", receiveMessage, false);
+
+      function receiveMessage(e) {
+        console.log(e.data);
+        console.log(window);
+      }
+    });
+  </script>
+</body>
+
+</html>

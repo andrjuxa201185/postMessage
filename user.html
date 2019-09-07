@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Landing</title>
+</head>
+
+<body>
+  <iframe
+    src="file:///C:/Users/andrey/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/landing.html"
+    width="0"
+    height="0">
+  </iframe>
+  <a href="">fgsgsrgat</a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      const frame = document.querySelector('iframe');
+      frame.onload = () => {
+        frame.contentWindow.postMessage({ aaa: 'h-ello---' }, '*');
+      }
+    });
+  </script>
+</body>
+
+</html>
